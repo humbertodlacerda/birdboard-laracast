@@ -7,10 +7,11 @@ use App\Models\Project;
 use Illuminate\Foundation\Testing\WithFaker;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 class ProjectsTest extends TestCase
 {
-    use WithFaker, WithoutMiddleware;
+    use WithFaker, WithoutMiddleware, DatabaseMigrations;
 
     public function test_a_user_can_create_a_project()
     {
